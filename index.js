@@ -34,6 +34,21 @@ bot.on("polling_error", (err) => {
 
 console.log("Bot Started...");
 
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Bot Running");
+});
+
+app.listen(
+    process.env.PORT || 3000,
+    () => {
+        console.log("Web Server Started");
+    }
+);
+
 /* ================= USER STORAGE ================= */
 
 let userState = {};
@@ -202,15 +217,67 @@ Minimum: 2`
 
     bot.sendMessage(
         chatId,
-        "/menu"
+        "🔄 Refreshing panel..."
     );
 
-    bot.emit(
-        "text",
+    const panelText = `🤖 <b>WS AUTOMATION PANEL</b>
+
+👋 Welcome!
+
+📊 <b>System Status</b>
+
+🟢 Active Accounts: ${
+        userState[chatId] &&
+        userState[chatId].clients
+            ? userState[chatId]
+                .clients.length
+            : 0
+    }
+
+⚡ Bot Status: ONLINE`;
+
+    bot.sendMessage(
+
+        chatId,
+
+        panelText,
+
         {
-            chat: { id: chatId }
-        },
-        ["/menu"]
+
+            parse_mode: "HTML",
+
+            reply_markup: {
+
+                inline_keyboard: [
+
+                    [
+                        {
+                            text: "🟢 Connect WhatsApp",
+                            callback_data: "connect"
+                        }
+                    ],
+
+                    [
+                        {
+                            text: "📊 Status",
+                            callback_data: "status"
+                        },
+
+                        {
+                            text: "🔄 Refresh",
+                            callback_data: "refresh"
+                        }
+                    ],
+
+                    [
+                        {
+                            text: "🔴 Disconnect",
+                            callback_data: "disconnect"
+                        }
+                    ]
+                ]
+            }
+        }
     );
 }
 
@@ -658,3 +725,9 @@ if (
     }
 }
 }
+process.on(
+    "SIGINT",
+    () => {
+        process.exit();
+    }
+);
