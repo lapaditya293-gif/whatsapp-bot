@@ -1,0 +1,30 @@
+2026/05/11-22:19:15.507 290 Creating DB D:\whatsapp-bot\.wwebjs_auth\session-7205526813_account2\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2026/05/11-22:19:15.516 290 Reusing MANIFEST D:\whatsapp-bot\.wwebjs_auth\session-7205526813_account2\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/11-22:21:07.174 34b8 Level-0 table #5: started
+2026/05/11-22:21:07.236 34b8 Level-0 table #5: 1057970 bytes OK
+2026/05/11-22:21:07.240 34b8 Delete type=0 #3
+2026/05/11-22:21:48.046 34b8 Level-0 table #7: started
+2026/05/11-22:21:48.093 34b8 Level-0 table #7: 1188959 bytes OK
+2026/05/11-22:21:48.096 34b8 Delete type=0 #4
+2026/05/11-22:21:48.762 15f0 Compacting 1@1 + 1@2 files
+2026/05/11-22:21:48.860 15f0 Generated table #8@1: 20210 keys, 872246 bytes
+2026/05/11-22:21:48.860 15f0 Compacted 1@1 + 1@2 files => 872246 bytes
+2026/05/11-22:21:48.863 15f0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/05/11-22:21:48.864 15f0 Delete type=2 #5
+2026/05/11-22:21:48.864 15f0 Delete type=2 #7
+2026/05/11-22:30:23.154 34b8 Level-0 table #10: started
+2026/05/11-22:30:23.232 34b8 Level-0 table #10: 1145778 bytes OK
+2026/05/11-22:30:23.238 34b8 Delete type=0 #6
+2026/05/11-22:30:27.867 34b8 Compacting 1@1 + 1@2 files
+2026/05/11-22:30:27.972 34b8 Generated table #11@1: 29879 keys, 1225914 bytes
+2026/05/11-22:30:27.972 34b8 Compacted 1@1 + 1@2 files => 1225914 bytes
+2026/05/11-22:30:27.976 34b8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/05/11-22:30:27.977 34b8 Delete type=2 #8
+2026/05/11-22:30:27.977 34b8 Delete type=2 #10
+2026/05/11-22:41:39.376 34b8 Level-0 table #13: started
+2026/05/11-22:41:39.437 34b8 Level-0 table #13: 1242320 bytes OK
+2026/05/11-22:41:39.443 34b8 Delete type=0 #9
+2026/05/11-22:41:58.882 15f0 Compacting 1@1 + 1@2 files
+2026/05/11-22:41:59.002 15f0 Generated table #14@1: 35386 keys, 1369285 bytes
+2026/05/11-22:41:59.002 15f0 Compacted 1@1 + 1@2 files => 1369285 bytes
+2026/05/11-22:41:59.004 15f0 compacted to: files[ 0 0 1 0 0 0 0 ]

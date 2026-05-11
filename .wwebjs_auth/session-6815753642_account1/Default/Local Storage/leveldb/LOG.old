@@ -1,0 +1,6 @@
+2026/05/11-22:10:55.537 23c8 Reusing MANIFEST D:\whatsapp-bot\.wwebjs_auth\session-6815753642_account1\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/11-22:10:55.546 23c8 Recovering log #3
+2026/05/11-22:10:55.550 23c8 Reusing old log D:\whatsapp-bot\.wwebjs_auth\session-6815753642_account1\Default\Local Storage\leveldb/000003.log 
+2026/05/11-22:11:55.571 278c Level-0 table #5: started
+2026/05/11-22:11:55.584 278c Level-0 table #5: 16092 bytes OK
+2026/05/11-22:11:55.590 278c Delete type=0 #3
