@@ -409,7 +409,10 @@ async function createWhatsAppClient(chatId) {
                 `${chatId}_account${accountNumber}`
         }),
 
-      puppeteer: {
+    puppeteer: {
+
+    executablePath:
+        process.env.CHROME_BIN,
 
     headless: true,
 
