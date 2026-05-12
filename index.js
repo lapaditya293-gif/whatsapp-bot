@@ -412,7 +412,7 @@ async function createWhatsAppClient(chatId) {
     puppeteer: {
 
     executablePath:
-        process.env.CHROME_BIN,
+    "/usr/bin/chromium",
 
     headless: true,
 
